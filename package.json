@@ -1,27 +1,33 @@
 {
-  "name": "call-script",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "clsx": "^2.1.1",
-    "next": "14.2.3",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-h5-audio-player": "^3.9.1"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.7.3",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
-  }
+	"name": "call-script",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"biome:format:check": "biome format ./src",
+		"biome:format:write": "biome format --write ./src",
+		"biome:lint:check": "npx @biomejs/biome lint ./src",
+		"biome:lint:fix": "npx @biomejs/biome check --apply ./src"
+	},
+	"dependencies": {
+		"aos": "^2.3.4",
+		"clsx": "^2.1.1",
+		"next": "14.2.3",
+		"react": "^18",
+		"react-dom": "^18",
+		"react-h5-audio-player": "^3.9.1",
+		"zustand": "^4.5.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.7.3",
+		"@types/aos": "^3.0.7",
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"postcss": "^8",
+		"tailwindcss": "^3.4.1",
+		"typescript": "^5"
+	}
 }

@@ -1,8 +1,7 @@
 "use client";
 
-import { TranscriptionItem } from "./TranscriptionGridItem";
 import { transcription } from "@/consts/transcription.const";
-
+import { TranscriptionItem } from "./TranscriptionGridItem";
 import { TranscriptionAudioPlayer } from "./audioPlayer/TranscriptionAudioPlayer";
 const audioSrc = "/audio/TestCall.mp3";
 
