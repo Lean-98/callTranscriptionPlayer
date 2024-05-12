@@ -1,5 +1,5 @@
 import { titleFont } from "@/config/fonts";
-import ThemeSwitch from "./ThemeSwitch";
+import { ThemeSwitch } from "./ThemeSwitch";
 
 interface Props {
 	title: string;

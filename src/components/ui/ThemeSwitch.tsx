@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 
-export default function ThemeSwitch() {
+export const ThemeSwitch = () => {
 	const [mounted, setMounted] = useState(false);
 	const { setTheme, resolvedTheme } = useTheme();
 
@@ -25,10 +25,10 @@ export default function ThemeSwitch() {
 		);
 
 	if (resolvedTheme === "dark") {
-		return <FiSun onClick={() => setTheme("light")} />;
+		return <FiSun data-testid="sun-icon" onClick={() => setTheme("light")} />;
 	}
 
 	if (resolvedTheme === "light") {
-		return <FiMoon onClick={() => setTheme("dark")} />;
+		return <FiMoon data-testid="moon-icon" onClick={() => setTheme("dark")} />;
 	}
-}
+};

@@ -22,7 +22,7 @@ export const TranscriptionAudioPlayer = ({
 	}, [time]);
 
 	return (
-		<div className="container mx-auto p-4">
+		<div className="container mx-auto p-4" data-testid="trascription-audio">
 			<AudioPlayer ref={playerRef} src={src} />
 		</div>
 	);

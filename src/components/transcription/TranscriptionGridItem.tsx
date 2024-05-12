@@ -25,7 +25,11 @@ export const TranscriptionItem = ({
 	}, []);
 
 	return (
-		<div className="flex-1 overflow-y-auto p-4" data-aos="zoom-in-up">
+		<div
+			className="flex-1 overflow-y-auto p-4"
+			data-aos="zoom-in-up"
+			data-testid="trascription-item"
+		>
 			<div className="flex flex-col space-y-2">
 				{transcription.map((transc, index) => (
 					<div
